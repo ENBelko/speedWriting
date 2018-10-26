@@ -1,6 +1,5 @@
-document.addEventListener('DOMContentLoaded',init);
-/*const start = document.querySelector('#start');
-start.addEventListener('click', init);*/
+const start = document.querySelector('#start');
+start.addEventListener('click', init);
 
 
 //Globals
@@ -10,17 +9,15 @@ const levels = {
     hardcore: 1
 };
 
-const currentLevel = levels.easy;
-
-/*let currentLevel = levels.easy;
+let currentLevel = levels.easy;
 const level = document.querySelector('#level-select');
-level.addEventListener('change', setLevel);*/
+level.addEventListener('change', setLevel);
 
 
-/*function setLevel(e) {
+function setLevel(e) {
     currentLevel = levels[e.target.value];
     seconds.innerHTML = currentLevel;
-}*/
+}
 
 
 let time = currentLevel;
